@@ -1,0 +1,2 @@
+# samouczek
+Coding exercises
