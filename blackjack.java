@@ -12,7 +12,6 @@ class cards {
 
     public static int blackjack(int c1, int c2) {
         if (c1 == 0 && c2 == 0) {
-            System.out.print(0);
         } else {
             if (c1 > c2 && c1 <= 21 && c2 <= 21) {
                 return c1;
@@ -21,7 +20,7 @@ class cards {
                 return c2;
             }
         }
-        return c1;
+        return 0;
     }
 
     public static void main(String[] args) {
