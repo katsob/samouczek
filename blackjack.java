@@ -11,7 +11,7 @@ class cards {
     static int c2 = 0;
 
     public static int blackjack(int c1, int c2) {
-        if (c1 < 21  && c2 < 21) {
+        if (c1 > 21  && c2 > 21) {
 
         } else {
             if (c1 > c2 && c1 <= 21 && c2 <= 21) {
