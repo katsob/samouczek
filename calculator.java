@@ -14,6 +14,7 @@ public class calculator {
     static int value2 = 7;
 
     public static int calc(int value1, int value2) {
+      if(Operator = '/' || Operator ='+' || Operator = '-' || Operator = '*' ){
         switch (Operator) {
             case '+':
                 return value1 + value2;
@@ -25,7 +26,16 @@ public class calculator {
                 return value1 * value2;
 
             case '/':
-                return value1 / value2;
+            if(value2 = 0){
+            return "Can't divide by 0";
+            }
+            else{
+            return value1 / value2;
+            }
+        }  
+        }
+        else {
+            return "Please enter valid operation sign, such as (+, -, /, *).";
         }
         return value1;
     }
