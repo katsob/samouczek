@@ -18,11 +18,16 @@ public class translator {
 
     static String input = "GCAT";
 
-    public static void main(String[] args) {
+    public static String testing() {
         String test = input.replace('T', 'U');
+        return test;
+    }
+
+    public static void main(String[] args) {
+        String RNA = testing();
         System.out.println("Inserted DNA string: " + input.toUpperCase());
 
-        System.out.println("Translated into RNA is: " + test);
+        System.out.println("Translated into RNA is: " + RNA);
 
     }
 
